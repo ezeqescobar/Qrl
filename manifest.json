@@ -1,0 +1,12 @@
+{
+	"manifest_version": 2,
+	"name": "Qrl",
+	"version": "1.0",
+	"description": "Crea un codigo Qr para compartir la url.",
+	"permissions": [ "tabs" ],
+	"browser_action": {
+		"default_title": "Qrl",
+		"default_icon": "images/icon.png",
+		"default_popup": "popup.html"
+	}
+}

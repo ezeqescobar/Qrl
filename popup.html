@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<style type="text/css">
+	body {
+		margin: 0;
+		padding: 0;
+		min-width: 310px;
+		min-height: 310px;
+		overflow-x: hidden;
+	}
+	#Qrl{
+		display: none;
+		z-index:9999;
+		right:0;
+		background-color:#fff;
+		margin: 0px;
+		width:305px;
+		height:305px;
+		padding-left:5px;
+		padding-top:5px;
+	}
+
+	#overlay
+	{
+		opacity: 0.6;
+		height:100%;
+		width:100%;
+		position:fixed;
+		left:0;
+		top:0;
+		z-index:1 !important;
+		background-color: #FFF;
+	}
+
+	#overlay-center{
+		margin-left: auto;
+		margin-right: auto;
+		position:absolute;
+		left:50%;
+		top:50%;
+	}
+
+	#overlay-center img {
+		vertical-align: middle;
+	}
+</style>
+<head>
+	<title>Qrl</title>
+	<script src="js/jquery.min.1.9.1.js"></script>
+	<script src="js/jquery.qrcode-0.2.js"></script>
+	<script src="js/popup.js"></script>
+</head>
+<body>
+	<div id="overlay">
+		<div id="overlay-center">
+			<img src="images/loading.gif" alt=""/>
+		</div>
+	</div>
+	<div id="Qrl"></div>
+</body>
+</html>
+
